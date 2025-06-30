@@ -263,42 +263,81 @@ gtag("config", "GT-KV5H4KH2");
   <!-- Kontainer utama -->
   <div class="max-w-xl mx-auto bg-white shadow-md rounded-lg mt-6 mb-4 overflow-hidden">
 
-    <!-- Tabel Informasi -->
-    <section class="w-full" role="table" aria-label="Informasi program studi mahasiswa">
-      <div class="info-row" role="row">
-        <div class="font-medium text-gray-600" role="rowheader">Nama</div>
-        <div class="font-bold" role="cell">: Brio Kaumi Alfaizum</div>
-      </div>
-      <div class="info-row" role="row">
-        <div class="font-medium text-gray-600" role="rowheader">Fakultas</div>
-        <div class="font-bold" role="cell">: Teknik Elektro dan Informatika - Komputasi (STEI-K)</div>
-      </div>
-      <div class="info-row" role="row">
-        <div class="font-medium text-gray-600" role="rowheader">Program Studi</div>
-        <div class="font-bold" role="cell">: <strong>Teknik Elektro</strong></div>
-      </div>
-      <div class="info-row" role="row">
-        <div class="font-medium text-gray-600" role="rowheader">Kampus</div>
-        <div class="font-bold" role="cell">: <strong>Ganesha</strong></div>
-      </div>
-      <div class="info-row" role="row">
-        <div class="font-medium text-gray-600" role="rowheader">Biaya UKT</div>
-        <div class="font-bold" role="cell">: <strong>Rp.8.350.000,-</strong></div>
-      </div>
-      <div class="info-row" role="row">
-        <div class="font-medium text-gray-600" role="rowheader">Biaya IPI</div>
-        <div class="font-bold" role="cell">: <strong>Rp.25.000.000,-</strong></div>
-      </div>
-	  <div class="info-row" role="row">
-        <div class="font-medium text-gray-600" role="rowheader">No Virtual Account</div>
-        <div class="font-bold" role="cell">: <strong>8712250001763712</strong></div>
-      </div>
-      <div class="info-row bg-yellow-50" role="row">
-        <div class="font-bold text-yellow-700" role="rowheader">TOTAL</div>
-        <div class="font-bold text-yellow-700" role="cell">: <strong>Rp.33.350.000,-</strong></div>
-      </div>
-    </section>
+  <!-- Tabel Informasi -->
+<section class="w-full max-w-3xl mx-auto space-y-2" role="table" aria-label="Informasi program studi mahasiswa">
+  <style>
+    .info-row {
+      display: grid;
+      grid-template-columns: minmax(180px, 280px) 10px 1fr;
+      column-gap: 6px;
+      row-gap: 6px;
+      align-items: start;
+    }
+
+    @media (max-width: 480px) {
+      .info-row {
+        grid-template-columns: minmax(140px, 1fr) 10px 1fr;
+      }
+    }
+
+    .info-label {
+      font-weight: 500;
+      color: #4b5563;
+      white-space: normal;
+    }
+  </style>
+
+  <div class="info-row" role="row">
+    <div class="info-label" role="rowheader">Nama</div>
+    <div role="presentation">:</div>
+    <div role="cell"><strong>Brio Kaumi Alfaizun</strong></div>
   </div>
+
+  <div class="info-row" role="row">
+    <div class="info-label" role="rowheader">Fakultas</div>
+    <div role="presentation">:</div>
+    <div role="cell"><strong>Teknik Elektro dan Informatika - Komputasi (STEI-K)</strong></div>
+  </div>
+
+  <div class="info-row" role="row">
+    <div class="info-label" role="rowheader">Studi Program</div>
+    <div role="presentation">:</div>
+    <div role="cell"><strong>Teknik Elektro</strong></div>
+  </div>
+
+  <div class="info-row" role="row">
+    <div class="info-label" role="rowheader">Kampus</div>
+    <div role="presentation">:</div>
+    <div role="cell"><strong>Ganesha</strong></div>
+  </div>
+
+  <div class="info-row" role="row">
+    <div class="info-label" role="rowheader">Biaya UKT</div>
+    <div role="presentation">:</div>
+    <div role="cell"><strong>Rp.8.350.000,-</strong></div>
+  </div>
+
+  <div class="info-row" role="row">
+    <div class="info-label" role="rowheader">Biaya IPI</div>
+    <div role="presentation">:</div>
+    <div role="cell"><strong>Rp.25.000.000,-</strong></div>
+  </div>
+
+  <div class="info-row" role="row">
+    <div class="info-label" role="rowheader">No Virtual Account</div>
+    <div role="presentation">:</div>
+    <div role="cell"><strong>8712250001763712</strong></div>
+  </div>
+
+  <!-- TOTAL: disamakan tampilannya -->
+  <div class="info-row" role="row">
+    <div class="info-label" role="rowheader">TOTAL</div>
+    <div role="presentation">:</div>
+    <div role="cell"><strong>Rp.33.350.000,-</strong></div>
+  </div>
+</section>
+
+
 
   <!-- Catatan / Informasi -->
   <div class="max-w-xl mx-auto bg-blue-100 text-blue-800 text-sm rounded-md shadow p-4 mb-10">
